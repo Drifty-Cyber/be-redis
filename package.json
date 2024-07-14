@@ -1,0 +1,12 @@
+{
+  "name": "redis-backend",
+  "version": "1.0.0",
+  "description": "BE with Redis for caching",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael Fadimu",
+  "license": "ISC"
+}
