@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "BE with Redis for caching",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
