@@ -1,12 +1,22 @@
 import express from "express";
-import redis from "redis";
+import redis, { createClient } from "redis";
 import fetch from "node-fetch";
+import "dotenv/config";
 
-const username = "username";
+// const username = "username";
+// const REDIS_PORT = 6379;
 const PORT = 3000;
-const REDIS_PORT = 6379;
 
-const client = redis.createClient(REDIS_PORT);
+// const client = redis.createClient(REDIS_PORT);
+const client = createClient({
+  password: process.env.REDIS_PASSWORD,
+  socket: {
+    host: "redis-17397.c325.us-east-1-4.ec2.redns.redis-cloud.com",
+    port: 17397,
+  },
+});
+
+// Initialize app
 const app = express();
 
 //Forat Output Middleware
